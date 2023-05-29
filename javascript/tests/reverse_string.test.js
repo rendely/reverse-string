@@ -1,5 +1,10 @@
 const reverseString = require('../reverse_string');
 
+
+test("can handle non string input", () => {
+  expect(reverseString(0)).toBe("Error: Not a string");
+});
+
 test("can handle an empty string", () => {
   expect(reverseString("")).toBe("");
 });
